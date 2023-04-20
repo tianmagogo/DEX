@@ -39,7 +39,7 @@ AxiosError: Request failed with status code 400
       'Accept-Encoding': 'gzip, compress, deflate, br'
     },
     method: 'get',
-    url: 'https://api.binance.com/api/v3/ticker/price?symbol=UNIUNIETH',
+    url: 'https://api.binance.com/api/v3/ticker/price?symbol=DAIETH',
     data: undefined
   },
   request: <ref *1> ClientRequest {
@@ -167,7 +167,7 @@ AxiosError: Request failed with status code 400
       _server: null,
       parser: null,
       _httpMessage: [Circular *1],
-      [Symbol(async_id_symbol)]: 10,
+      [Symbol(async_id_symbol)]: 7,
       [Symbol(kHandle)]: TCP {
         reading: true,
         onconnection: null,
@@ -185,7 +185,7 @@ AxiosError: Request failed with status code 400
       [Symbol(kBytesRead)]: 0,
       [Symbol(kBytesWritten)]: 0
     },
-    _header: 'GET https://api.binance.com/api/v3/ticker/price?symbol=UNIUNIETH HTTP/1.1\r\n' +
+    _header: 'GET https://api.binance.com/api/v3/ticker/price?symbol=DAIETH HTTP/1.1\r\n' +
       'Accept: application/json, text/plain, */*\r\n' +
       'X-MBX-APIKEY: WU9JGUYuEb73fKRwZiMtJiQv8fLtMPisrwoxODMFjDmYq3QUdLF60xhdvWljcEfg\r\n' +
       'User-Agent: axios/1.3.6\r\n' +
@@ -241,39 +241,6 @@ AxiosError: Request failed with status code 400
             [Symbol(kBytesRead)]: 0,
             [Symbol(kBytesWritten)]: 0
           },
-          Socket {
-            connecting: false,
-            _hadError: false,
-            _parent: null,
-            _host: null,
-            _closeAfterHandlingError: false,
-            _readableState: [ReadableState],
-            _events: [Object: null prototype],
-            _eventsCount: 8,
-            _maxListeners: undefined,
-            _writableState: [WritableState],
-            allowHalfOpen: false,
-            _sockname: null,
-            _pendingData: null,
-            _pendingEncoding: '',
-            server: null,
-            _server: null,
-            parser: [HTTPParser],
-            _httpMessage: [ClientRequest],
-            [Symbol(async_id_symbol)]: 7,
-            [Symbol(kHandle)]: [TCP],
-            [Symbol(lastWriteQueueSize)]: 0,
-            [Symbol(timeout)]: null,
-            [Symbol(kBuffer)]: null,
-            [Symbol(kBufferCb)]: null,
-            [Symbol(kBufferGen)]: null,
-            [Symbol(kCapture)]: false,
-            [Symbol(kSetNoDelay)]: true,
-            [Symbol(kSetKeepAlive)]: true,
-            [Symbol(kSetKeepAliveInitialDelay)]: 60,
-            [Symbol(kBytesRead)]: 0,
-            [Symbol(kBytesWritten)]: 0
-          },
           <ref *2> Socket {
             connecting: false,
             _hadError: false,
@@ -293,7 +260,7 @@ AxiosError: Request failed with status code 400
             _server: null,
             parser: null,
             _httpMessage: [Circular *1],
-            [Symbol(async_id_symbol)]: 10,
+            [Symbol(async_id_symbol)]: 7,
             [Symbol(kHandle)]: [TCP],
             [Symbol(lastWriteQueueSize)]: 0,
             [Symbol(timeout)]: null,
@@ -415,7 +382,7 @@ AxiosError: Request failed with status code 400
       maxFreeSockets: 256,
       scheduling: 'lifo',
       maxTotalSockets: Infinity,
-      totalSocketCount: 6,
+      totalSocketCount: 5,
       [Symbol(kCapture)]: false
     },
     socketPath: undefined,
@@ -423,7 +390,7 @@ AxiosError: Request failed with status code 400
     maxHeaderSize: undefined,
     insecureHTTPParser: undefined,
     joinDuplicateHeaders: undefined,
-    path: 'https://api.binance.com/api/v3/ticker/price?symbol=UNIUNIETH',
+    path: 'https://api.binance.com/api/v3/ticker/price?symbol=DAIETH',
     _ended: true,
     res: IncomingMessage {
       _readableState: ReadableState {
@@ -437,7 +404,7 @@ AxiosError: Request failed with status code 400
         endEmitted: true,
         reading: false,
         constructed: true,
-        sync: true,
+        sync: false,
         needReadable: false,
         emittedReadable: false,
         readableListening: false,
@@ -452,7 +419,7 @@ AxiosError: Request failed with status code 400
         defaultEncoding: 'utf8',
         awaitDrainWriters: null,
         multiAwaitDrain: false,
-        readingMore: true,
+        readingMore: false,
         dataEmitted: true,
         decoder: null,
         encoding: null,
@@ -560,7 +527,7 @@ AxiosError: Request failed with status code 400
         _server: null,
         parser: null,
         _httpMessage: [Circular *1],
-        [Symbol(async_id_symbol)]: 10,
+        [Symbol(async_id_symbol)]: 7,
         [Symbol(kHandle)]: TCP {
           reading: true,
           onconnection: null,
@@ -594,7 +561,7 @@ AxiosError: Request failed with status code 400
         'Content-Type',
         'application/json;charset=UTF-8',
         'Date',
-        'Thu, 20 Apr 2023 12:55:32 GMT',
+        'Thu, 20 Apr 2023 12:59:40 GMT',
         'Expires',
         '0',
         'Pragma',
@@ -604,9 +571,9 @@ AxiosError: Request failed with status code 400
         'Strict-Transport-Security',
         'max-age=31536000; includeSubdomains',
         'Via',
-        '1.1 b6d62aaccba821ce2183dc39d7933bc6.cloudfront.net (CloudFront)',
+        '1.1 48870f7aa4d92d870c176f257241c13e.cloudfront.net (CloudFront)',
         'X-Amz-Cf-Id',
-        'xjd3wT7z2cHG-gQoOb74b-uGclcZsLZ3uctp37UyBz8c89CWhIKe_Q==',
+        'hXIdHw_mEMVyos2ih75aSPj8vBUP4shHCN4uAVFrzrg3iypkRgPqlw==',
         'X-Amz-Cf-Pop',
         'HKG62-C2',
         'X-Cache',
@@ -618,11 +585,11 @@ AxiosError: Request failed with status code 400
         'X-Frame-Options',
         'SAMEORIGIN',
         'X-Mbx-Used-Weight',
-        '31',
+        '3',
         'X-Mbx-Used-Weight-1m',
-        '31',
+        '3',
         'X-Mbx-Uuid',
-        '830e6f94-a267-4930-8653-a3d96970e5f0',
+        '153c0d8e-64c9-4bfd-b15c-62ff66290eea',
         'X-Webkit-Csp',
         "default-src 'self'",
         'X-Xss-Protection',
@@ -730,7 +697,7 @@ AxiosError: Request failed with status code 400
         _server: null,
         parser: null,
         _httpMessage: [Circular *1],
-        [Symbol(async_id_symbol)]: 10,
+        [Symbol(async_id_symbol)]: 7,
         [Symbol(kHandle)]: TCP {
           reading: true,
           onconnection: null,
@@ -748,10 +715,10 @@ AxiosError: Request failed with status code 400
         [Symbol(kBytesRead)]: 0,
         [Symbol(kBytesWritten)]: 0
       },
-      _consuming: false,
+      _consuming: true,
       _dumped: false,
       req: [Circular *1],
-      responseUrl: 'https://api.binance.com/api/v3/ticker/price?symbol=UNIUNIETH',
+      responseUrl: 'https://api.binance.com/api/v3/ticker/price?symbol=DAIETH',
       redirects: [],
       [Symbol(kCapture)]: false,
       [Symbol(kHeaders)]: {
@@ -760,21 +727,21 @@ AxiosError: Request failed with status code 400
         'cache-control': 'no-cache, no-store, must-revalidate',
         'content-security-policy': "default-src 'self'",
         'content-type': 'application/json;charset=UTF-8',
-        date: 'Thu, 20 Apr 2023 12:55:32 GMT',
+        date: 'Thu, 20 Apr 2023 12:59:40 GMT',
         expires: '0',
         pragma: 'no-cache',
         server: 'nginx',
         'strict-transport-security': 'max-age=31536000; includeSubdomains',
-        via: '1.1 b6d62aaccba821ce2183dc39d7933bc6.cloudfront.net (CloudFront)',
-        'x-amz-cf-id': 'xjd3wT7z2cHG-gQoOb74b-uGclcZsLZ3uctp37UyBz8c89CWhIKe_Q==',
+        via: '1.1 48870f7aa4d92d870c176f257241c13e.cloudfront.net (CloudFront)',
+        'x-amz-cf-id': 'hXIdHw_mEMVyos2ih75aSPj8vBUP4shHCN4uAVFrzrg3iypkRgPqlw==',
         'x-amz-cf-pop': 'HKG62-C2',
         'x-cache': 'Error from cloudfront',
         'x-content-security-policy': "default-src 'self'",
         'x-content-type-options': 'nosniff',
         'x-frame-options': 'SAMEORIGIN',
-        'x-mbx-used-weight': '31',
-        'x-mbx-used-weight-1m': '31',
-        'x-mbx-uuid': '830e6f94-a267-4930-8653-a3d96970e5f0',
+        'x-mbx-used-weight': '3',
+        'x-mbx-used-weight-1m': '3',
+        'x-mbx-uuid': '153c0d8e-64c9-4bfd-b15c-62ff66290eea',
         'x-webkit-csp': "default-src 'self'",
         'x-xss-protection': '1; mode=block'
       },
@@ -837,7 +804,7 @@ AxiosError: Request failed with status code 400
         maxRedirects: 21,
         maxBodyLength: Infinity,
         protocol: 'http:',
-        path: 'https://api.binance.com/api/v3/ticker/price?symbol=UNIUNIETH',
+        path: 'https://api.binance.com/api/v3/ticker/price?symbol=DAIETH',
         method: 'GET',
         headers: [Object: null prototype] {
           Accept: 'application/json, text/plain, */*',
@@ -883,7 +850,7 @@ AxiosError: Request failed with status code 400
           }
         },
         pathname: 'https://api.binance.com/api/v3/ticker/price',
-        search: '?symbol=UNIUNIETH'
+        search: '?symbol=DAIETH'
       },
       _ended: true,
       _ending: true,
@@ -893,7 +860,7 @@ AxiosError: Request failed with status code 400
       _requestBodyBuffers: [],
       _onNativeResponse: [Function (anonymous)],
       _currentRequest: [Circular *1],
-      _currentUrl: 'https://api.binance.com/api/v3/ticker/price?symbol=UNIUNIETH',
+      _currentUrl: 'https://api.binance.com/api/v3/ticker/price?symbol=DAIETH',
       [Symbol(kCapture)]: false
     },
     [Symbol(kCapture)]: false,
@@ -923,21 +890,21 @@ AxiosError: Request failed with status code 400
       'cache-control': 'no-cache, no-store, must-revalidate',
       'content-security-policy': "default-src 'self'",
       'content-type': 'application/json;charset=UTF-8',
-      date: 'Thu, 20 Apr 2023 12:55:32 GMT',
+      date: 'Thu, 20 Apr 2023 12:59:40 GMT',
       expires: '0',
       pragma: 'no-cache',
       server: 'nginx',
       'strict-transport-security': 'max-age=31536000; includeSubdomains',
-      via: '1.1 b6d62aaccba821ce2183dc39d7933bc6.cloudfront.net (CloudFront)',
-      'x-amz-cf-id': 'xjd3wT7z2cHG-gQoOb74b-uGclcZsLZ3uctp37UyBz8c89CWhIKe_Q==',
+      via: '1.1 48870f7aa4d92d870c176f257241c13e.cloudfront.net (CloudFront)',
+      'x-amz-cf-id': 'hXIdHw_mEMVyos2ih75aSPj8vBUP4shHCN4uAVFrzrg3iypkRgPqlw==',
       'x-amz-cf-pop': 'HKG62-C2',
       'x-cache': 'Error from cloudfront',
       'x-content-security-policy': "default-src 'self'",
       'x-content-type-options': 'nosniff',
       'x-frame-options': 'SAMEORIGIN',
-      'x-mbx-used-weight': '31',
-      'x-mbx-used-weight-1m': '31',
-      'x-mbx-uuid': '830e6f94-a267-4930-8653-a3d96970e5f0',
+      'x-mbx-used-weight': '3',
+      'x-mbx-used-weight-1m': '3',
+      'x-mbx-uuid': '153c0d8e-64c9-4bfd-b15c-62ff66290eea',
       'x-webkit-csp': "default-src 'self'",
       'x-xss-protection': '1; mode=block'
     },
@@ -970,7 +937,7 @@ AxiosError: Request failed with status code 400
         'Accept-Encoding': 'gzip, compress, deflate, br'
       },
       method: 'get',
-      url: 'https://api.binance.com/api/v3/ticker/price?symbol=UNIUNIETH',
+      url: 'https://api.binance.com/api/v3/ticker/price?symbol=DAIETH',
       data: undefined
     },
     request: <ref *1> ClientRequest {
@@ -1100,7 +1067,7 @@ AxiosError: Request failed with status code 400
         _server: null,
         parser: null,
         _httpMessage: [Circular *1],
-        [Symbol(async_id_symbol)]: 10,
+        [Symbol(async_id_symbol)]: 7,
         [Symbol(kHandle)]: TCP {
           reading: true,
           onconnection: null,
@@ -1118,7 +1085,7 @@ AxiosError: Request failed with status code 400
         [Symbol(kBytesRead)]: 0,
         [Symbol(kBytesWritten)]: 0
       },
-      _header: 'GET https://api.binance.com/api/v3/ticker/price?symbol=UNIUNIETH HTTP/1.1\r\n' +
+      _header: 'GET https://api.binance.com/api/v3/ticker/price?symbol=DAIETH HTTP/1.1\r\n' +
         'Accept: application/json, text/plain, */*\r\n' +
         'X-MBX-APIKEY: WU9JGUYuEb73fKRwZiMtJiQv8fLtMPisrwoxODMFjDmYq3QUdLF60xhdvWljcEfg\r\n' +
         'User-Agent: axios/1.3.6\r\n' +
@@ -1140,14 +1107,7 @@ AxiosError: Request failed with status code 400
         options: [Object: null prototype] { noDelay: true, path: null },
         requests: [Object: null prototype] {},
         sockets: [Object: null prototype] {
-          '127.0.0.1:7890:': [
-            [Socket],
-            [Socket],
-            [Socket],
-            [Socket],
-            [Socket],
-            [Socket]
-          ]
+          '127.0.0.1:7890:': [ [Socket], [Socket], [Socket], [Socket], [Socket] ]
         },
         freeSockets: [Object: null prototype] {},
         keepAliveMsecs: 1000,
@@ -1156,7 +1116,7 @@ AxiosError: Request failed with status code 400
         maxFreeSockets: 256,
         scheduling: 'lifo',
         maxTotalSockets: Infinity,
-        totalSocketCount: 6,
+        totalSocketCount: 5,
         [Symbol(kCapture)]: false
       },
       socketPath: undefined,
@@ -1164,7 +1124,7 @@ AxiosError: Request failed with status code 400
       maxHeaderSize: undefined,
       insecureHTTPParser: undefined,
       joinDuplicateHeaders: undefined,
-      path: 'https://api.binance.com/api/v3/ticker/price?symbol=UNIUNIETH',
+      path: 'https://api.binance.com/api/v3/ticker/price?symbol=DAIETH',
       _ended: true,
       res: IncomingMessage {
         _readableState: ReadableState {
@@ -1178,7 +1138,7 @@ AxiosError: Request failed with status code 400
           endEmitted: true,
           reading: false,
           constructed: true,
-          sync: true,
+          sync: false,
           needReadable: false,
           emittedReadable: false,
           readableListening: false,
@@ -1193,7 +1153,7 @@ AxiosError: Request failed with status code 400
           defaultEncoding: 'utf8',
           awaitDrainWriters: null,
           multiAwaitDrain: false,
-          readingMore: true,
+          readingMore: false,
           dataEmitted: true,
           decoder: null,
           encoding: null,
@@ -1299,7 +1259,7 @@ AxiosError: Request failed with status code 400
           _server: null,
           parser: null,
           _httpMessage: [Circular *1],
-          [Symbol(async_id_symbol)]: 10,
+          [Symbol(async_id_symbol)]: 7,
           [Symbol(kHandle)]: TCP {
             reading: true,
             onconnection: null,
@@ -1333,7 +1293,7 @@ AxiosError: Request failed with status code 400
           'Content-Type',
           'application/json;charset=UTF-8',
           'Date',
-          'Thu, 20 Apr 2023 12:55:32 GMT',
+          'Thu, 20 Apr 2023 12:59:40 GMT',
           'Expires',
           '0',
           'Pragma',
@@ -1343,9 +1303,9 @@ AxiosError: Request failed with status code 400
           'Strict-Transport-Security',
           'max-age=31536000; includeSubdomains',
           'Via',
-          '1.1 b6d62aaccba821ce2183dc39d7933bc6.cloudfront.net (CloudFront)',
+          '1.1 48870f7aa4d92d870c176f257241c13e.cloudfront.net (CloudFront)',
           'X-Amz-Cf-Id',
-          'xjd3wT7z2cHG-gQoOb74b-uGclcZsLZ3uctp37UyBz8c89CWhIKe_Q==',
+          'hXIdHw_mEMVyos2ih75aSPj8vBUP4shHCN4uAVFrzrg3iypkRgPqlw==',
           'X-Amz-Cf-Pop',
           'HKG62-C2',
           'X-Cache',
@@ -1357,11 +1317,11 @@ AxiosError: Request failed with status code 400
           'X-Frame-Options',
           'SAMEORIGIN',
           'X-Mbx-Used-Weight',
-          '31',
+          '3',
           'X-Mbx-Used-Weight-1m',
-          '31',
+          '3',
           'X-Mbx-Uuid',
-          '830e6f94-a267-4930-8653-a3d96970e5f0',
+          '153c0d8e-64c9-4bfd-b15c-62ff66290eea',
           'X-Webkit-Csp',
           "default-src 'self'",
           'X-Xss-Protection',
@@ -1467,7 +1427,7 @@ AxiosError: Request failed with status code 400
           _server: null,
           parser: null,
           _httpMessage: [Circular *1],
-          [Symbol(async_id_symbol)]: 10,
+          [Symbol(async_id_symbol)]: 7,
           [Symbol(kHandle)]: TCP {
             reading: true,
             onconnection: null,
@@ -1485,10 +1445,10 @@ AxiosError: Request failed with status code 400
           [Symbol(kBytesRead)]: 0,
           [Symbol(kBytesWritten)]: 0
         },
-        _consuming: false,
+        _consuming: true,
         _dumped: false,
         req: [Circular *1],
-        responseUrl: 'https://api.binance.com/api/v3/ticker/price?symbol=UNIUNIETH',
+        responseUrl: 'https://api.binance.com/api/v3/ticker/price?symbol=DAIETH',
         redirects: [],
         [Symbol(kCapture)]: false,
         [Symbol(kHeaders)]: {
@@ -1497,21 +1457,21 @@ AxiosError: Request failed with status code 400
           'cache-control': 'no-cache, no-store, must-revalidate',
           'content-security-policy': "default-src 'self'",
           'content-type': 'application/json;charset=UTF-8',
-          date: 'Thu, 20 Apr 2023 12:55:32 GMT',
+          date: 'Thu, 20 Apr 2023 12:59:40 GMT',
           expires: '0',
           pragma: 'no-cache',
           server: 'nginx',
           'strict-transport-security': 'max-age=31536000; includeSubdomains',
-          via: '1.1 b6d62aaccba821ce2183dc39d7933bc6.cloudfront.net (CloudFront)',
-          'x-amz-cf-id': 'xjd3wT7z2cHG-gQoOb74b-uGclcZsLZ3uctp37UyBz8c89CWhIKe_Q==',
+          via: '1.1 48870f7aa4d92d870c176f257241c13e.cloudfront.net (CloudFront)',
+          'x-amz-cf-id': 'hXIdHw_mEMVyos2ih75aSPj8vBUP4shHCN4uAVFrzrg3iypkRgPqlw==',
           'x-amz-cf-pop': 'HKG62-C2',
           'x-cache': 'Error from cloudfront',
           'x-content-security-policy': "default-src 'self'",
           'x-content-type-options': 'nosniff',
           'x-frame-options': 'SAMEORIGIN',
-          'x-mbx-used-weight': '31',
-          'x-mbx-used-weight-1m': '31',
-          'x-mbx-uuid': '830e6f94-a267-4930-8653-a3d96970e5f0',
+          'x-mbx-used-weight': '3',
+          'x-mbx-used-weight-1m': '3',
+          'x-mbx-uuid': '153c0d8e-64c9-4bfd-b15c-62ff66290eea',
           'x-webkit-csp': "default-src 'self'",
           'x-xss-protection': '1; mode=block'
         },
@@ -1574,7 +1534,7 @@ AxiosError: Request failed with status code 400
           maxRedirects: 21,
           maxBodyLength: Infinity,
           protocol: 'http:',
-          path: 'https://api.binance.com/api/v3/ticker/price?symbol=UNIUNIETH',
+          path: 'https://api.binance.com/api/v3/ticker/price?symbol=DAIETH',
           method: 'GET',
           headers: [Object: null prototype] {
             Accept: 'application/json, text/plain, */*',
@@ -1592,7 +1552,7 @@ AxiosError: Request failed with status code 400
           agent: undefined,
           nativeProtocols: { 'http:': [Object], 'https:': [Object] },
           pathname: 'https://api.binance.com/api/v3/ticker/price',
-          search: '?symbol=UNIUNIETH'
+          search: '?symbol=DAIETH'
         },
         _ended: true,
         _ending: true,
@@ -1602,7 +1562,7 @@ AxiosError: Request failed with status code 400
         _requestBodyBuffers: [],
         _onNativeResponse: [Function (anonymous)],
         _currentRequest: [Circular *1],
-        _currentUrl: 'https://api.binance.com/api/v3/ticker/price?symbol=UNIUNIETH',
+        _currentUrl: 'https://api.binance.com/api/v3/ticker/price?symbol=DAIETH',
         [Symbol(kCapture)]: false
       },
       [Symbol(kCapture)]: false,
