@@ -1,10 +1,11 @@
 PS C:\Users\26175\Desktop\au> node test4.js
 WU9JGUYuEb73fKRwZiMtJiQv8fLtMPisrwoxODMFjDmYq3QUdLF60xhdvWljcEfg
+KXW0rq8Z6FdOsTVkTUR95V1gnw8A39XJ5MnNKYB1LHM
 
 C:\Users\26175\node_modules\axios\dist\node\axios.cjs:1902
     reject(new AxiosError(
            ^
-AxiosError: Request failed with status code 404
+AxiosError: Request failed with status code 400
     at settle (C:\Users\26175\node_modules\axios\dist\node\axios.cjs:1902:12)
     at IncomingMessage.handleStreamEnd (C:\Users\26175\node_modules\axios\dist\node\axios.cjs:2954:11)
     at IncomingMessage.emit (node:events:525:35)
@@ -35,12 +36,12 @@ AxiosError: Request failed with status code 404
     validateStatus: [Function: validateStatus],
     headers: AxiosHeaders {
       Accept: 'application/json, text/plain, */*',
-      'X-API-KEY': 'KXW0rq8Z6FdOsTVkTUR95V1gnw8A39XJ5MnNKYB1LHM',
+      'X-MBX-APIKEY': 'WU9JGUYuEb73fKRwZiMtJiQv8fLtMPisrwoxODMFjDmYq3QUdLF60xhdvWljcEfg',
       'User-Agent': 'axios/1.3.6',
       'Accept-Encoding': 'gzip, compress, deflate, br'
     },
     method: 'get',
-    url: 'https://api.dex.guru/v1/tokens/UNIETH/price?tickers=usd',
+    url: 'https://api.binance.com/api/v3/ticker/price?symbol=DAIETH',
     data: undefined
   },
   request: <ref *1> ClientRequest {
@@ -168,7 +169,7 @@ AxiosError: Request failed with status code 404
       _server: null,
       parser: null,
       _httpMessage: [Circular *1],
-      [Symbol(async_id_symbol)]: 21,
+      [Symbol(async_id_symbol)]: 9,
       [Symbol(kHandle)]: TCP {
         reading: true,
         onconnection: null,
@@ -186,12 +187,12 @@ AxiosError: Request failed with status code 404
       [Symbol(kBytesRead)]: 0,
       [Symbol(kBytesWritten)]: 0
     },
-    _header: 'GET https://api.dex.guru/v1/tokens/UNIETH/price?tickers=usd HTTP/1.1\r\n' +
+    _header: 'GET https://api.binance.com/api/v3/ticker/price?symbol=DAIETH HTTP/1.1\r\n' +
       'Accept: application/json, text/plain, */*\r\n' +
-      'X-API-KEY: KXW0rq8Z6FdOsTVkTUR95V1gnw8A39XJ5MnNKYB1LHM\r\n' +
+      'X-MBX-APIKEY: WU9JGUYuEb73fKRwZiMtJiQv8fLtMPisrwoxODMFjDmYq3QUdLF60xhdvWljcEfg\r\n' +
       'User-Agent: axios/1.3.6\r\n' +
       'Accept-Encoding: gzip, compress, deflate, br\r\n' +
-      'host: api.dex.guru\r\n' +
+      'host: api.binance.com\r\n' +
       'Connection: close\r\n' +
       '\r\n',
     _keepAliveTimeout: 0,
@@ -242,7 +243,7 @@ AxiosError: Request failed with status code 404
             [Symbol(kBytesRead)]: 0,
             [Symbol(kBytesWritten)]: 0
           },
-          Socket {
+          <ref *2> Socket {
             connecting: false,
             _hadError: false,
             _parent: null,
@@ -250,7 +251,7 @@ AxiosError: Request failed with status code 404
             _closeAfterHandlingError: false,
             _readableState: [ReadableState],
             _events: [Object: null prototype],
-            _eventsCount: 8,
+            _eventsCount: 7,
             _maxListeners: undefined,
             _writableState: [WritableState],
             allowHalfOpen: false,
@@ -259,42 +260,9 @@ AxiosError: Request failed with status code 404
             _pendingEncoding: '',
             server: null,
             _server: null,
-            parser: [HTTPParser],
-            _httpMessage: [ClientRequest],
+            parser: null,
+            _httpMessage: [Circular *1],
             [Symbol(async_id_symbol)]: 9,
-            [Symbol(kHandle)]: [TCP],
-            [Symbol(lastWriteQueueSize)]: 0,
-            [Symbol(timeout)]: null,
-            [Symbol(kBuffer)]: null,
-            [Symbol(kBufferCb)]: null,
-            [Symbol(kBufferGen)]: null,
-            [Symbol(kCapture)]: false,
-            [Symbol(kSetNoDelay)]: true,
-            [Symbol(kSetKeepAlive)]: true,
-            [Symbol(kSetKeepAliveInitialDelay)]: 60,
-            [Symbol(kBytesRead)]: 0,
-            [Symbol(kBytesWritten)]: 0
-          },
-          Socket {
-            connecting: false,
-            _hadError: false,
-            _parent: null,
-            _host: null,
-            _closeAfterHandlingError: false,
-            _readableState: [ReadableState],
-            _events: [Object: null prototype],
-            _eventsCount: 8,
-            _maxListeners: undefined,
-            _writableState: [WritableState],
-            allowHalfOpen: false,
-            _sockname: null,
-            _pendingData: null,
-            _pendingEncoding: '',
-            server: null,
-            _server: null,
-            parser: [HTTPParser],
-            _httpMessage: [ClientRequest],
-            [Symbol(async_id_symbol)]: 12,
             [Symbol(kHandle)]: [TCP],
             [Symbol(lastWriteQueueSize)]: 0,
             [Symbol(timeout)]: null,
@@ -374,7 +342,7 @@ AxiosError: Request failed with status code 404
             [Symbol(kBytesRead)]: 0,
             [Symbol(kBytesWritten)]: 0
           },
-          <ref *2> Socket {
+          Socket {
             connecting: false,
             _hadError: false,
             _parent: null,
@@ -382,7 +350,7 @@ AxiosError: Request failed with status code 404
             _closeAfterHandlingError: false,
             _readableState: [ReadableState],
             _events: [Object: null prototype],
-            _eventsCount: 7,
+            _eventsCount: 8,
             _maxListeners: undefined,
             _writableState: [WritableState],
             allowHalfOpen: false,
@@ -391,8 +359,8 @@ AxiosError: Request failed with status code 404
             _pendingEncoding: '',
             server: null,
             _server: null,
-            parser: null,
-            _httpMessage: [Circular *1],
+            parser: [HTTPParser],
+            _httpMessage: [ClientRequest],
             [Symbol(async_id_symbol)]: 21,
             [Symbol(kHandle)]: [TCP],
             [Symbol(lastWriteQueueSize)]: 0,
@@ -416,7 +384,7 @@ AxiosError: Request failed with status code 404
       maxFreeSockets: 256,
       scheduling: 'lifo',
       maxTotalSockets: Infinity,
-      totalSocketCount: 6,
+      totalSocketCount: 5,
       [Symbol(kCapture)]: false
     },
     socketPath: undefined,
@@ -424,7 +392,7 @@ AxiosError: Request failed with status code 404
     maxHeaderSize: undefined,
     insecureHTTPParser: undefined,
     joinDuplicateHeaders: undefined,
-    path: 'https://api.dex.guru/v1/tokens/UNIETH/price?tickers=usd',
+    path: 'https://api.binance.com/api/v3/ticker/price?symbol=DAIETH',
     _ended: true,
     res: IncomingMessage {
       _readableState: ReadableState {
@@ -561,7 +529,7 @@ AxiosError: Request failed with status code 404
         _server: null,
         parser: null,
         _httpMessage: [Circular *1],
-        [Symbol(async_id_symbol)]: 21,
+        [Symbol(async_id_symbol)]: 9,
         [Symbol(kHandle)]: TCP {
           reading: true,
           onconnection: null,
@@ -587,23 +555,47 @@ AxiosError: Request failed with status code 404
         'Connection',
         'close',
         'Content-Length',
-        '22',
-        'Alt-Svc',
-        'h3=":443"; ma=86400, h3-29=":443"; ma=86400',
-        'Cf-Cache-Status',
-        'DYNAMIC',
-        'Cf-Ray',
-        '7bad97e32bcf109b-HKG',
+        '38',
+        'Cache-Control',
+        'no-cache, no-store, must-revalidate',
+        'Content-Security-Policy',
+        "default-src 'self'",
         'Content-Type',
-        'application/json',
+        'application/json;charset=UTF-8',
         'Date',
-        'Thu, 20 Apr 2023 13:04:28 GMT',
+        'Thu, 20 Apr 2023 13:16:59 GMT',
+        'Expires',
+        '0',
+        'Pragma',
+        'no-cache',
         'Server',
-        'cloudflare',
+        'nginx',
         'Strict-Transport-Security',
-        'max-age=15724800; includeSubDomains',
-        'X-Request-Id',
-        'abffada2650cc0100a59849fe7161689'
+        'max-age=31536000; includeSubdomains',
+        'Via',
+        '1.1 27034129640b1a7427aa49bb1182e938.cloudfront.net (CloudFront)',
+        'X-Amz-Cf-Id',
+        '2yVq1O9vJXt-ohBxYmPOT93yNVmkUBM1uDXVbUAPBSmDk-YSJOZkvQ==',
+        'X-Amz-Cf-Pop',
+        'HKG62-C2',
+        'X-Cache',
+        'Error from cloudfront',
+        'X-Content-Security-Policy',
+        "default-src 'self'",
+        'X-Content-Type-Options',
+        'nosniff',
+        'X-Frame-Options',
+        'SAMEORIGIN',
+        'X-Mbx-Used-Weight',
+        '2',
+        'X-Mbx-Used-Weight-1m',
+        '2',
+        'X-Mbx-Uuid',
+        'f57d30a3-66b0-429d-bf71-fbd68afcb059',
+        'X-Webkit-Csp',
+        "default-src 'self'",
+        'X-Xss-Protection',
+        '1; mode=block'
       ],
       rawTrailers: [],
       joinDuplicateHeaders: undefined,
@@ -611,8 +603,8 @@ AxiosError: Request failed with status code 404
       upgrade: false,
       url: '',
       method: null,
-      statusCode: 404,
-      statusMessage: 'Not Found',
+      statusCode: 400,
+      statusMessage: 'Bad Request',
       client: <ref *2> Socket {
         connecting: false,
         _hadError: false,
@@ -707,7 +699,7 @@ AxiosError: Request failed with status code 404
         _server: null,
         parser: null,
         _httpMessage: [Circular *1],
-        [Symbol(async_id_symbol)]: 21,
+        [Symbol(async_id_symbol)]: 9,
         [Symbol(kHandle)]: TCP {
           reading: true,
           onconnection: null,
@@ -728,22 +720,34 @@ AxiosError: Request failed with status code 404
       _consuming: true,
       _dumped: false,
       req: [Circular *1],
-      responseUrl: 'https://api.dex.guru/v1/tokens/UNIETH/price?tickers=usd',
+      responseUrl: 'https://api.binance.com/api/v3/ticker/price?symbol=DAIETH',
       redirects: [],
       [Symbol(kCapture)]: false,
       [Symbol(kHeaders)]: {
         connection: 'close',
-        'content-length': '22',
-        'alt-svc': 'h3=":443"; ma=86400, h3-29=":443"; ma=86400',
-        'cf-cache-status': 'DYNAMIC',
-        'cf-ray': '7bad97e32bcf109b-HKG',
-        'content-type': 'application/json',
-        date: 'Thu, 20 Apr 2023 13:04:28 GMT',
-        server: 'cloudflare',
-        'strict-transport-security': 'max-age=15724800; includeSubDomains',
-        'x-request-id': 'abffada2650cc0100a59849fe7161689'
+        'content-length': '38',
+        'cache-control': 'no-cache, no-store, must-revalidate',
+        'content-security-policy': "default-src 'self'",
+        'content-type': 'application/json;charset=UTF-8',
+        date: 'Thu, 20 Apr 2023 13:16:59 GMT',
+        expires: '0',
+        pragma: 'no-cache',
+        server: 'nginx',
+        'strict-transport-security': 'max-age=31536000; includeSubdomains',
+        via: '1.1 27034129640b1a7427aa49bb1182e938.cloudfront.net (CloudFront)',
+        'x-amz-cf-id': '2yVq1O9vJXt-ohBxYmPOT93yNVmkUBM1uDXVbUAPBSmDk-YSJOZkvQ==',
+        'x-amz-cf-pop': 'HKG62-C2',
+        'x-cache': 'Error from cloudfront',
+        'x-content-security-policy': "default-src 'self'",
+        'x-content-type-options': 'nosniff',
+        'x-frame-options': 'SAMEORIGIN',
+        'x-mbx-used-weight': '2',
+        'x-mbx-used-weight-1m': '2',
+        'x-mbx-uuid': 'f57d30a3-66b0-429d-bf71-fbd68afcb059',
+        'x-webkit-csp': "default-src 'self'",
+        'x-xss-protection': '1; mode=block'
       },
-      [Symbol(kHeadersCount)]: 20,
+      [Symbol(kHeadersCount)]: 44,
       [Symbol(kTrailers)]: null,
       [Symbol(kTrailersCount)]: 0
     },
@@ -802,14 +806,14 @@ AxiosError: Request failed with status code 404
         maxRedirects: 21,
         maxBodyLength: Infinity,
         protocol: 'http:',
-        path: 'https://api.dex.guru/v1/tokens/UNIETH/price?tickers=usd',
+        path: 'https://api.binance.com/api/v3/ticker/price?symbol=DAIETH',
         method: 'GET',
         headers: [Object: null prototype] {
           Accept: 'application/json, text/plain, */*',
-          'X-API-KEY': 'KXW0rq8Z6FdOsTVkTUR95V1gnw8A39XJ5MnNKYB1LHM',
+          'X-MBX-APIKEY': 'WU9JGUYuEb73fKRwZiMtJiQv8fLtMPisrwoxODMFjDmYq3QUdLF60xhdvWljcEfg',
           'User-Agent': 'axios/1.3.6',
           'Accept-Encoding': 'gzip, compress, deflate, br',
-          host: 'api.dex.guru'
+          host: 'api.binance.com'
         },
         agents: { http: undefined, https: undefined },
         auth: undefined,
@@ -847,8 +851,8 @@ AxiosError: Request failed with status code 404
             request: [Function: request]
           }
         },
-        pathname: 'https://api.dex.guru/v1/tokens/UNIETH/price',
-        search: '?tickers=usd'
+        pathname: 'https://api.binance.com/api/v3/ticker/price',
+        search: '?symbol=DAIETH'
       },
       _ended: true,
       _ending: true,
@@ -858,7 +862,7 @@ AxiosError: Request failed with status code 404
       _requestBodyBuffers: [],
       _onNativeResponse: [Function (anonymous)],
       _currentRequest: [Circular *1],
-      _currentUrl: 'https://api.dex.guru/v1/tokens/UNIETH/price?tickers=usd',
+      _currentUrl: 'https://api.binance.com/api/v3/ticker/price?symbol=DAIETH',
       [Symbol(kCapture)]: false
     },
     [Symbol(kCapture)]: false,
@@ -868,28 +872,43 @@ AxiosError: Request failed with status code 404
     [Symbol(corked)]: 0,
     [Symbol(kOutHeaders)]: [Object: null prototype] {
       accept: [ 'Accept', 'application/json, text/plain, */*' ],
-      'x-api-key': [ 'X-API-KEY', 'KXW0rq8Z6FdOsTVkTUR95V1gnw8A39XJ5MnNKYB1LHM' ],
+      'x-mbx-apikey': [
+        'X-MBX-APIKEY',
+        'WU9JGUYuEb73fKRwZiMtJiQv8fLtMPisrwoxODMFjDmYq3QUdLF60xhdvWljcEfg'
+      ],
       'user-agent': [ 'User-Agent', 'axios/1.3.6' ],
       'accept-encoding': [ 'Accept-Encoding', 'gzip, compress, deflate, br' ],
-      host: [ 'host', 'api.dex.guru' ]
+      host: [ 'host', 'api.binance.com' ]
     },
     [Symbol(errored)]: null,
     [Symbol(kUniqueHeaders)]: null
   },
   response: {
-    status: 404,
-    statusText: 'Not Found',
+    status: 400,
+    statusText: 'Bad Request',
     headers: AxiosHeaders {
       connection: 'close',
-      'content-length': '22',
-      'alt-svc': 'h3=":443"; ma=86400, h3-29=":443"; ma=86400',
-      'cf-cache-status': 'DYNAMIC',
-      'cf-ray': '7bad97e32bcf109b-HKG',
-      'content-type': 'application/json',
-      date: 'Thu, 20 Apr 2023 13:04:28 GMT',
-      server: 'cloudflare',
-      'strict-transport-security': 'max-age=15724800; includeSubDomains',
-      'x-request-id': 'abffada2650cc0100a59849fe7161689'
+      'content-length': '38',
+      'cache-control': 'no-cache, no-store, must-revalidate',
+      'content-security-policy': "default-src 'self'",
+      'content-type': 'application/json;charset=UTF-8',
+      date: 'Thu, 20 Apr 2023 13:16:59 GMT',
+      expires: '0',
+      pragma: 'no-cache',
+      server: 'nginx',
+      'strict-transport-security': 'max-age=31536000; includeSubdomains',
+      via: '1.1 27034129640b1a7427aa49bb1182e938.cloudfront.net (CloudFront)',
+      'x-amz-cf-id': '2yVq1O9vJXt-ohBxYmPOT93yNVmkUBM1uDXVbUAPBSmDk-YSJOZkvQ==',
+      'x-amz-cf-pop': 'HKG62-C2',
+      'x-cache': 'Error from cloudfront',
+      'x-content-security-policy': "default-src 'self'",
+      'x-content-type-options': 'nosniff',
+      'x-frame-options': 'SAMEORIGIN',
+      'x-mbx-used-weight': '2',
+      'x-mbx-used-weight-1m': '2',
+      'x-mbx-uuid': 'f57d30a3-66b0-429d-bf71-fbd68afcb059',
+      'x-webkit-csp': "default-src 'self'",
+      'x-xss-protection': '1; mode=block'
     },
     config: {
       transitional: {
@@ -915,12 +934,12 @@ AxiosError: Request failed with status code 404
       validateStatus: [Function: validateStatus],
       headers: AxiosHeaders {
         Accept: 'application/json, text/plain, */*',
-        'X-API-KEY': 'KXW0rq8Z6FdOsTVkTUR95V1gnw8A39XJ5MnNKYB1LHM',
+        'X-MBX-APIKEY': 'WU9JGUYuEb73fKRwZiMtJiQv8fLtMPisrwoxODMFjDmYq3QUdLF60xhdvWljcEfg',
         'User-Agent': 'axios/1.3.6',
         'Accept-Encoding': 'gzip, compress, deflate, br'
       },
       method: 'get',
-      url: 'https://api.dex.guru/v1/tokens/UNIETH/price?tickers=usd',
+      url: 'https://api.binance.com/api/v3/ticker/price?symbol=DAIETH',
       data: undefined
     },
     request: <ref *1> ClientRequest {
@@ -1050,7 +1069,7 @@ AxiosError: Request failed with status code 404
         _server: null,
         parser: null,
         _httpMessage: [Circular *1],
-        [Symbol(async_id_symbol)]: 21,
+        [Symbol(async_id_symbol)]: 9,
         [Symbol(kHandle)]: TCP {
           reading: true,
           onconnection: null,
@@ -1068,12 +1087,12 @@ AxiosError: Request failed with status code 404
         [Symbol(kBytesRead)]: 0,
         [Symbol(kBytesWritten)]: 0
       },
-      _header: 'GET https://api.dex.guru/v1/tokens/UNIETH/price?tickers=usd HTTP/1.1\r\n' +
+      _header: 'GET https://api.binance.com/api/v3/ticker/price?symbol=DAIETH HTTP/1.1\r\n' +
         'Accept: application/json, text/plain, */*\r\n' +
-        'X-API-KEY: KXW0rq8Z6FdOsTVkTUR95V1gnw8A39XJ5MnNKYB1LHM\r\n' +
+        'X-MBX-APIKEY: WU9JGUYuEb73fKRwZiMtJiQv8fLtMPisrwoxODMFjDmYq3QUdLF60xhdvWljcEfg\r\n' +
         'User-Agent: axios/1.3.6\r\n' +
         'Accept-Encoding: gzip, compress, deflate, br\r\n' +
-        'host: api.dex.guru\r\n' +
+        'host: api.binance.com\r\n' +
         'Connection: close\r\n' +
         '\r\n',
       _keepAliveTimeout: 0,
@@ -1090,14 +1109,7 @@ AxiosError: Request failed with status code 404
         options: [Object: null prototype] { noDelay: true, path: null },
         requests: [Object: null prototype] {},
         sockets: [Object: null prototype] {
-          '127.0.0.1:7890:': [
-            [Socket],
-            [Socket],
-            [Socket],
-            [Socket],
-            [Socket],
-            [Socket]
-          ]
+          '127.0.0.1:7890:': [ [Socket], [Socket], [Socket], [Socket], [Socket] ]
         },
         freeSockets: [Object: null prototype] {},
         keepAliveMsecs: 1000,
@@ -1106,7 +1118,7 @@ AxiosError: Request failed with status code 404
         maxFreeSockets: 256,
         scheduling: 'lifo',
         maxTotalSockets: Infinity,
-        totalSocketCount: 6,
+        totalSocketCount: 5,
         [Symbol(kCapture)]: false
       },
       socketPath: undefined,
@@ -1114,7 +1126,7 @@ AxiosError: Request failed with status code 404
       maxHeaderSize: undefined,
       insecureHTTPParser: undefined,
       joinDuplicateHeaders: undefined,
-      path: 'https://api.dex.guru/v1/tokens/UNIETH/price?tickers=usd',
+      path: 'https://api.binance.com/api/v3/ticker/price?symbol=DAIETH',
       _ended: true,
       res: IncomingMessage {
         _readableState: ReadableState {
@@ -1249,7 +1261,7 @@ AxiosError: Request failed with status code 404
           _server: null,
           parser: null,
           _httpMessage: [Circular *1],
-          [Symbol(async_id_symbol)]: 21,
+          [Symbol(async_id_symbol)]: 9,
           [Symbol(kHandle)]: TCP {
             reading: true,
             onconnection: null,
@@ -1275,23 +1287,47 @@ AxiosError: Request failed with status code 404
           'Connection',
           'close',
           'Content-Length',
-          '22',
-          'Alt-Svc',
-          'h3=":443"; ma=86400, h3-29=":443"; ma=86400',
-          'Cf-Cache-Status',
-          'DYNAMIC',
-          'Cf-Ray',
-          '7bad97e32bcf109b-HKG',
+          '38',
+          'Cache-Control',
+          'no-cache, no-store, must-revalidate',
+          'Content-Security-Policy',
+          "default-src 'self'",
           'Content-Type',
-          'application/json',
+          'application/json;charset=UTF-8',
           'Date',
-          'Thu, 20 Apr 2023 13:04:28 GMT',
+          'Thu, 20 Apr 2023 13:16:59 GMT',
+          'Expires',
+          '0',
+          'Pragma',
+          'no-cache',
           'Server',
-          'cloudflare',
+          'nginx',
           'Strict-Transport-Security',
-          'max-age=15724800; includeSubDomains',
-          'X-Request-Id',
-          'abffada2650cc0100a59849fe7161689'
+          'max-age=31536000; includeSubdomains',
+          'Via',
+          '1.1 27034129640b1a7427aa49bb1182e938.cloudfront.net (CloudFront)',
+          'X-Amz-Cf-Id',
+          '2yVq1O9vJXt-ohBxYmPOT93yNVmkUBM1uDXVbUAPBSmDk-YSJOZkvQ==',
+          'X-Amz-Cf-Pop',
+          'HKG62-C2',
+          'X-Cache',
+          'Error from cloudfront',
+          'X-Content-Security-Policy',
+          "default-src 'self'",
+          'X-Content-Type-Options',
+          'nosniff',
+          'X-Frame-Options',
+          'SAMEORIGIN',
+          'X-Mbx-Used-Weight',
+          '2',
+          'X-Mbx-Used-Weight-1m',
+          '2',
+          'X-Mbx-Uuid',
+          'f57d30a3-66b0-429d-bf71-fbd68afcb059',
+          'X-Webkit-Csp',
+          "default-src 'self'",
+          'X-Xss-Protection',
+          '1; mode=block'
         ],
         rawTrailers: [],
         joinDuplicateHeaders: undefined,
@@ -1299,8 +1335,8 @@ AxiosError: Request failed with status code 404
         upgrade: false,
         url: '',
         method: null,
-        statusCode: 404,
-        statusMessage: 'Not Found',
+        statusCode: 400,
+        statusMessage: 'Bad Request',
         client: <ref *2> Socket {
           connecting: false,
           _hadError: false,
@@ -1393,7 +1429,7 @@ AxiosError: Request failed with status code 404
           _server: null,
           parser: null,
           _httpMessage: [Circular *1],
-          [Symbol(async_id_symbol)]: 21,
+          [Symbol(async_id_symbol)]: 9,
           [Symbol(kHandle)]: TCP {
             reading: true,
             onconnection: null,
@@ -1414,22 +1450,34 @@ AxiosError: Request failed with status code 404
         _consuming: true,
         _dumped: false,
         req: [Circular *1],
-        responseUrl: 'https://api.dex.guru/v1/tokens/UNIETH/price?tickers=usd',
+        responseUrl: 'https://api.binance.com/api/v3/ticker/price?symbol=DAIETH',
         redirects: [],
         [Symbol(kCapture)]: false,
         [Symbol(kHeaders)]: {
           connection: 'close',
-          'content-length': '22',
-          'alt-svc': 'h3=":443"; ma=86400, h3-29=":443"; ma=86400',
-          'cf-cache-status': 'DYNAMIC',
-          'cf-ray': '7bad97e32bcf109b-HKG',
-          'content-type': 'application/json',
-          date: 'Thu, 20 Apr 2023 13:04:28 GMT',
-          server: 'cloudflare',
-          'strict-transport-security': 'max-age=15724800; includeSubDomains',
-          'x-request-id': 'abffada2650cc0100a59849fe7161689'
+          'content-length': '38',
+          'cache-control': 'no-cache, no-store, must-revalidate',
+          'content-security-policy': "default-src 'self'",
+          'content-type': 'application/json;charset=UTF-8',
+          date: 'Thu, 20 Apr 2023 13:16:59 GMT',
+          expires: '0',
+          pragma: 'no-cache',
+          server: 'nginx',
+          'strict-transport-security': 'max-age=31536000; includeSubdomains',
+          via: '1.1 27034129640b1a7427aa49bb1182e938.cloudfront.net (CloudFront)',
+          'x-amz-cf-id': '2yVq1O9vJXt-ohBxYmPOT93yNVmkUBM1uDXVbUAPBSmDk-YSJOZkvQ==',
+          'x-amz-cf-pop': 'HKG62-C2',
+          'x-cache': 'Error from cloudfront',
+          'x-content-security-policy': "default-src 'self'",
+          'x-content-type-options': 'nosniff',
+          'x-frame-options': 'SAMEORIGIN',
+          'x-mbx-used-weight': '2',
+          'x-mbx-used-weight-1m': '2',
+          'x-mbx-uuid': 'f57d30a3-66b0-429d-bf71-fbd68afcb059',
+          'x-webkit-csp': "default-src 'self'",
+          'x-xss-protection': '1; mode=block'
         },
-        [Symbol(kHeadersCount)]: 20,
+        [Symbol(kHeadersCount)]: 44,
         [Symbol(kTrailers)]: null,
         [Symbol(kTrailersCount)]: 0
       },
@@ -1488,14 +1536,14 @@ AxiosError: Request failed with status code 404
           maxRedirects: 21,
           maxBodyLength: Infinity,
           protocol: 'http:',
-          path: 'https://api.dex.guru/v1/tokens/UNIETH/price?tickers=usd',
+          path: 'https://api.binance.com/api/v3/ticker/price?symbol=DAIETH',
           method: 'GET',
           headers: [Object: null prototype] {
             Accept: 'application/json, text/plain, */*',
-            'X-API-KEY': 'KXW0rq8Z6FdOsTVkTUR95V1gnw8A39XJ5MnNKYB1LHM',
+            'X-MBX-APIKEY': 'WU9JGUYuEb73fKRwZiMtJiQv8fLtMPisrwoxODMFjDmYq3QUdLF60xhdvWljcEfg',
             'User-Agent': 'axios/1.3.6',
             'Accept-Encoding': 'gzip, compress, deflate, br',
-            host: 'api.dex.guru'
+            host: 'api.binance.com'
           },
           agents: { http: undefined, https: undefined },
           auth: undefined,
@@ -1505,8 +1553,8 @@ AxiosError: Request failed with status code 404
           port: '7890',
           agent: undefined,
           nativeProtocols: { 'http:': [Object], 'https:': [Object] },
-          pathname: 'https://api.dex.guru/v1/tokens/UNIETH/price',
-          search: '?tickers=usd'
+          pathname: 'https://api.binance.com/api/v3/ticker/price',
+          search: '?symbol=DAIETH'
         },
         _ended: true,
         _ending: true,
@@ -1516,7 +1564,7 @@ AxiosError: Request failed with status code 404
         _requestBodyBuffers: [],
         _onNativeResponse: [Function (anonymous)],
         _currentRequest: [Circular *1],
-        _currentUrl: 'https://api.dex.guru/v1/tokens/UNIETH/price?tickers=usd',
+        _currentUrl: 'https://api.binance.com/api/v3/ticker/price?symbol=DAIETH',
         [Symbol(kCapture)]: false
       },
       [Symbol(kCapture)]: false,
@@ -1526,15 +1574,18 @@ AxiosError: Request failed with status code 404
       [Symbol(corked)]: 0,
       [Symbol(kOutHeaders)]: [Object: null prototype] {
         accept: [ 'Accept', 'application/json, text/plain, */*' ],
-        'x-api-key': [ 'X-API-KEY', 'KXW0rq8Z6FdOsTVkTUR95V1gnw8A39XJ5MnNKYB1LHM' ],
+        'x-mbx-apikey': [
+          'X-MBX-APIKEY',
+          'WU9JGUYuEb73fKRwZiMtJiQv8fLtMPisrwoxODMFjDmYq3QUdLF60xhdvWljcEfg'
+        ],
         'user-agent': [ 'User-Agent', 'axios/1.3.6' ],
         'accept-encoding': [ 'Accept-Encoding', 'gzip, compress, deflate, br' ],
-        host: [ 'host', 'api.dex.guru' ]
+        host: [ 'host', 'api.binance.com' ]
       },
       [Symbol(errored)]: null,
       [Symbol(kUniqueHeaders)]: null
     },
-    data: { detail: 'Not Found' }
+    data: { code: -1121, msg: 'Invalid symbol.' }
   }
 }
 
