@@ -1,3 +1,5 @@
+PS C:\Users\26175\Desktop\au> node test5.js
+
 C:\Users\26175\node_modules\axios\dist\node\axios.cjs:1902
     reject(new AxiosError(
            ^
@@ -37,7 +39,7 @@ AxiosError: Request failed with status code 400
       'Accept-Encoding': 'gzip, compress, deflate, br'
     },
     method: 'get',
-    url: 'https://api.binance.com/api/v3/ticker/price?symbol=DAIETH',
+    url: 'https://api.binance.com/api/v3/ticker/price?symbol=DAI_ETH',
     data: undefined
   },
   request: <ref *1> ClientRequest {
@@ -183,7 +185,7 @@ AxiosError: Request failed with status code 400
       [Symbol(kBytesRead)]: 0,
       [Symbol(kBytesWritten)]: 0
     },
-    _header: 'GET https://api.binance.com/api/v3/ticker/price?symbol=DAIETH HTTP/1.1\r\n' +
+    _header: 'GET https://api.binance.com/api/v3/ticker/price?symbol=DAI_ETH HTTP/1.1\r\n' +
       'Accept: application/json, text/plain, */*\r\n' +
       'X-MBX-APIKEY: WU9JGUYuEb73fKRwZiMtJiQv8fLtMPisrwoxODMFjDmYq3QUdLF60xhdvWljcEfg\r\n' +
       'User-Agent: axios/1.3.6\r\n' +
@@ -421,7 +423,7 @@ AxiosError: Request failed with status code 400
     maxHeaderSize: undefined,
     insecureHTTPParser: undefined,
     joinDuplicateHeaders: undefined,
-    path: 'https://api.binance.com/api/v3/ticker/price?symbol=DAIETH',
+    path: 'https://api.binance.com/api/v3/ticker/price?symbol=DAI_ETH',
     _ended: true,
     res: IncomingMessage {
       _readableState: ReadableState {
@@ -435,7 +437,7 @@ AxiosError: Request failed with status code 400
         endEmitted: true,
         reading: false,
         constructed: true,
-        sync: true,
+        sync: false,
         needReadable: false,
         emittedReadable: false,
         readableListening: false,
@@ -450,7 +452,7 @@ AxiosError: Request failed with status code 400
         defaultEncoding: 'utf8',
         awaitDrainWriters: null,
         multiAwaitDrain: false,
-        readingMore: true,
+        readingMore: false,
         dataEmitted: true,
         decoder: null,
         encoding: null,
@@ -592,7 +594,7 @@ AxiosError: Request failed with status code 400
         'Content-Type',
         'application/json;charset=UTF-8',
         'Date',
-        'Sat, 22 Apr 2023 18:19:17 GMT',
+        'Sat, 22 Apr 2023 18:35:16 GMT',
         'Expires',
         '0',
         'Pragma',
@@ -602,9 +604,9 @@ AxiosError: Request failed with status code 400
         'Strict-Transport-Security',
         'max-age=31536000; includeSubdomains',
         'Via',
-        '1.1 94db66e0b13cce35d9db0c342571f976.cloudfront.net (CloudFront)',
+        '1.1 d7f5b4bbc6b589bcab884d2cc2e40e5e.cloudfront.net (CloudFront)',
         'X-Amz-Cf-Id',
-        'bH9M6EAcWA0wrlc_Rc0TEmlTSSsMdMYu6-1aWz3rw1YCsFxMzQonfg==',
+        'JkNzGSenXJF5k1oDXQ5oJHo5ZlO2GFsx98dIHVLARNYjQgCeCdamOw==',
         'X-Amz-Cf-Pop',
         'HKG62-C2',
         'X-Cache',
@@ -616,11 +618,11 @@ AxiosError: Request failed with status code 400
         'X-Frame-Options',
         'SAMEORIGIN',
         'X-Mbx-Used-Weight',
-        '12',
+        '144',
         'X-Mbx-Used-Weight-1m',
-        '12',
+        '144',
         'X-Mbx-Uuid',
-        '508f49d4-4f7b-4672-8b26-0fbb035859a6',
+        '70c61af5-2205-49e6-be64-c09c268dba36',
         'X-Webkit-Csp',
         "default-src 'self'",
         'X-Xss-Protection',
@@ -746,10 +748,10 @@ AxiosError: Request failed with status code 400
         [Symbol(kBytesRead)]: 0,
         [Symbol(kBytesWritten)]: 0
       },
-      _consuming: false,
+      _consuming: true,
       _dumped: false,
       req: [Circular *1],
-      responseUrl: 'https://api.binance.com/api/v3/ticker/price?symbol=DAIETH',
+      responseUrl: 'https://api.binance.com/api/v3/ticker/price?symbol=DAI_ETH',
       redirects: [],
       [Symbol(kCapture)]: false,
       [Symbol(kHeaders)]: {
@@ -758,21 +760,21 @@ AxiosError: Request failed with status code 400
         'cache-control': 'no-cache, no-store, must-revalidate',
         'content-security-policy': "default-src 'self'",
         'content-type': 'application/json;charset=UTF-8',
-        date: 'Sat, 22 Apr 2023 18:19:17 GMT',
+        date: 'Sat, 22 Apr 2023 18:35:16 GMT',
         expires: '0',
         pragma: 'no-cache',
         server: 'nginx',
         'strict-transport-security': 'max-age=31536000; includeSubdomains',
-        via: '1.1 94db66e0b13cce35d9db0c342571f976.cloudfront.net (CloudFront)',
-        'x-amz-cf-id': 'bH9M6EAcWA0wrlc_Rc0TEmlTSSsMdMYu6-1aWz3rw1YCsFxMzQonfg==',
+        via: '1.1 d7f5b4bbc6b589bcab884d2cc2e40e5e.cloudfront.net (CloudFront)',
+        'x-amz-cf-id': 'JkNzGSenXJF5k1oDXQ5oJHo5ZlO2GFsx98dIHVLARNYjQgCeCdamOw==',
         'x-amz-cf-pop': 'HKG62-C2',
         'x-cache': 'Error from cloudfront',
         'x-content-security-policy': "default-src 'self'",
         'x-content-type-options': 'nosniff',
         'x-frame-options': 'SAMEORIGIN',
-        'x-mbx-used-weight': '12',
-        'x-mbx-used-weight-1m': '12',
-        'x-mbx-uuid': '508f49d4-4f7b-4672-8b26-0fbb035859a6',
+        'x-mbx-used-weight': '144',
+        'x-mbx-used-weight-1m': '144',
+        'x-mbx-uuid': '70c61af5-2205-49e6-be64-c09c268dba36',
         'x-webkit-csp': "default-src 'self'",
         'x-xss-protection': '1; mode=block'
       },
@@ -835,7 +837,7 @@ AxiosError: Request failed with status code 400
         maxRedirects: 21,
         maxBodyLength: Infinity,
         protocol: 'http:',
-        path: 'https://api.binance.com/api/v3/ticker/price?symbol=DAIETH',
+        path: 'https://api.binance.com/api/v3/ticker/price?symbol=DAI_ETH',
         method: 'GET',
         headers: [Object: null prototype] {
           Accept: 'application/json, text/plain, */*',
@@ -881,7 +883,7 @@ AxiosError: Request failed with status code 400
           }
         },
         pathname: 'https://api.binance.com/api/v3/ticker/price',
-        search: '?symbol=DAIETH'
+        search: '?symbol=DAI_ETH'
       },
       _ended: true,
       _ending: true,
@@ -891,7 +893,7 @@ AxiosError: Request failed with status code 400
       _requestBodyBuffers: [],
       _onNativeResponse: [Function (anonymous)],
       _currentRequest: [Circular *1],
-      _currentUrl: 'https://api.binance.com/api/v3/ticker/price?symbol=DAIETH',
+      _currentUrl: 'https://api.binance.com/api/v3/ticker/price?symbol=DAI_ETH',
       [Symbol(kCapture)]: false
     },
     [Symbol(kCapture)]: false,
@@ -921,21 +923,21 @@ AxiosError: Request failed with status code 400
       'cache-control': 'no-cache, no-store, must-revalidate',
       'content-security-policy': "default-src 'self'",
       'content-type': 'application/json;charset=UTF-8',
-      date: 'Sat, 22 Apr 2023 18:19:17 GMT',
+      date: 'Sat, 22 Apr 2023 18:35:16 GMT',
       expires: '0',
       pragma: 'no-cache',
       server: 'nginx',
       'strict-transport-security': 'max-age=31536000; includeSubdomains',
-      via: '1.1 94db66e0b13cce35d9db0c342571f976.cloudfront.net (CloudFront)',
-      'x-amz-cf-id': 'bH9M6EAcWA0wrlc_Rc0TEmlTSSsMdMYu6-1aWz3rw1YCsFxMzQonfg==',
+      via: '1.1 d7f5b4bbc6b589bcab884d2cc2e40e5e.cloudfront.net (CloudFront)',
+      'x-amz-cf-id': 'JkNzGSenXJF5k1oDXQ5oJHo5ZlO2GFsx98dIHVLARNYjQgCeCdamOw==',
       'x-amz-cf-pop': 'HKG62-C2',
       'x-cache': 'Error from cloudfront',
       'x-content-security-policy': "default-src 'self'",
       'x-content-type-options': 'nosniff',
       'x-frame-options': 'SAMEORIGIN',
-      'x-mbx-used-weight': '12',
-      'x-mbx-used-weight-1m': '12',
-      'x-mbx-uuid': '508f49d4-4f7b-4672-8b26-0fbb035859a6',
+      'x-mbx-used-weight': '144',
+      'x-mbx-used-weight-1m': '144',
+      'x-mbx-uuid': '70c61af5-2205-49e6-be64-c09c268dba36',
       'x-webkit-csp': "default-src 'self'",
       'x-xss-protection': '1; mode=block'
     },
@@ -968,7 +970,7 @@ AxiosError: Request failed with status code 400
         'Accept-Encoding': 'gzip, compress, deflate, br'
       },
       method: 'get',
-      url: 'https://api.binance.com/api/v3/ticker/price?symbol=DAIETH',
+      url: 'https://api.binance.com/api/v3/ticker/price?symbol=DAI_ETH',
       data: undefined
     },
     request: <ref *1> ClientRequest {
@@ -1116,7 +1118,7 @@ AxiosError: Request failed with status code 400
         [Symbol(kBytesRead)]: 0,
         [Symbol(kBytesWritten)]: 0
       },
-      _header: 'GET https://api.binance.com/api/v3/ticker/price?symbol=DAIETH HTTP/1.1\r\n' +
+      _header: 'GET https://api.binance.com/api/v3/ticker/price?symbol=DAI_ETH HTTP/1.1\r\n' +
         'Accept: application/json, text/plain, */*\r\n' +
         'X-MBX-APIKEY: WU9JGUYuEb73fKRwZiMtJiQv8fLtMPisrwoxODMFjDmYq3QUdLF60xhdvWljcEfg\r\n' +
         'User-Agent: axios/1.3.6\r\n' +
@@ -1162,7 +1164,7 @@ AxiosError: Request failed with status code 400
       maxHeaderSize: undefined,
       insecureHTTPParser: undefined,
       joinDuplicateHeaders: undefined,
-      path: 'https://api.binance.com/api/v3/ticker/price?symbol=DAIETH',
+      path: 'https://api.binance.com/api/v3/ticker/price?symbol=DAI_ETH',
       _ended: true,
       res: IncomingMessage {
         _readableState: ReadableState {
@@ -1176,7 +1178,7 @@ AxiosError: Request failed with status code 400
           endEmitted: true,
           reading: false,
           constructed: true,
-          sync: true,
+          sync: false,
           needReadable: false,
           emittedReadable: false,
           readableListening: false,
@@ -1191,7 +1193,7 @@ AxiosError: Request failed with status code 400
           defaultEncoding: 'utf8',
           awaitDrainWriters: null,
           multiAwaitDrain: false,
-          readingMore: true,
+          readingMore: false,
           dataEmitted: true,
           decoder: null,
           encoding: null,
@@ -1331,7 +1333,7 @@ AxiosError: Request failed with status code 400
           'Content-Type',
           'application/json;charset=UTF-8',
           'Date',
-          'Sat, 22 Apr 2023 18:19:17 GMT',
+          'Sat, 22 Apr 2023 18:35:16 GMT',
           'Expires',
           '0',
           'Pragma',
@@ -1341,9 +1343,9 @@ AxiosError: Request failed with status code 400
           'Strict-Transport-Security',
           'max-age=31536000; includeSubdomains',
           'Via',
-          '1.1 94db66e0b13cce35d9db0c342571f976.cloudfront.net (CloudFront)',
+          '1.1 d7f5b4bbc6b589bcab884d2cc2e40e5e.cloudfront.net (CloudFront)',
           'X-Amz-Cf-Id',
-          'bH9M6EAcWA0wrlc_Rc0TEmlTSSsMdMYu6-1aWz3rw1YCsFxMzQonfg==',
+          'JkNzGSenXJF5k1oDXQ5oJHo5ZlO2GFsx98dIHVLARNYjQgCeCdamOw==',
           'X-Amz-Cf-Pop',
           'HKG62-C2',
           'X-Cache',
@@ -1355,11 +1357,11 @@ AxiosError: Request failed with status code 400
           'X-Frame-Options',
           'SAMEORIGIN',
           'X-Mbx-Used-Weight',
-          '12',
+          '144',
           'X-Mbx-Used-Weight-1m',
-          '12',
+          '144',
           'X-Mbx-Uuid',
-          '508f49d4-4f7b-4672-8b26-0fbb035859a6',
+          '70c61af5-2205-49e6-be64-c09c268dba36',
           'X-Webkit-Csp',
           "default-src 'self'",
           'X-Xss-Protection',
@@ -1483,10 +1485,10 @@ AxiosError: Request failed with status code 400
           [Symbol(kBytesRead)]: 0,
           [Symbol(kBytesWritten)]: 0
         },
-        _consuming: false,
+        _consuming: true,
         _dumped: false,
         req: [Circular *1],
-        responseUrl: 'https://api.binance.com/api/v3/ticker/price?symbol=DAIETH',
+        responseUrl: 'https://api.binance.com/api/v3/ticker/price?symbol=DAI_ETH',
         redirects: [],
         [Symbol(kCapture)]: false,
         [Symbol(kHeaders)]: {
@@ -1495,21 +1497,21 @@ AxiosError: Request failed with status code 400
           'cache-control': 'no-cache, no-store, must-revalidate',
           'content-security-policy': "default-src 'self'",
           'content-type': 'application/json;charset=UTF-8',
-          date: 'Sat, 22 Apr 2023 18:19:17 GMT',
+          date: 'Sat, 22 Apr 2023 18:35:16 GMT',
           expires: '0',
           pragma: 'no-cache',
           server: 'nginx',
           'strict-transport-security': 'max-age=31536000; includeSubdomains',
-          via: '1.1 94db66e0b13cce35d9db0c342571f976.cloudfront.net (CloudFront)',
-          'x-amz-cf-id': 'bH9M6EAcWA0wrlc_Rc0TEmlTSSsMdMYu6-1aWz3rw1YCsFxMzQonfg==',
+          via: '1.1 d7f5b4bbc6b589bcab884d2cc2e40e5e.cloudfront.net (CloudFront)',
+          'x-amz-cf-id': 'JkNzGSenXJF5k1oDXQ5oJHo5ZlO2GFsx98dIHVLARNYjQgCeCdamOw==',
           'x-amz-cf-pop': 'HKG62-C2',
           'x-cache': 'Error from cloudfront',
           'x-content-security-policy': "default-src 'self'",
           'x-content-type-options': 'nosniff',
           'x-frame-options': 'SAMEORIGIN',
-          'x-mbx-used-weight': '12',
-          'x-mbx-used-weight-1m': '12',
-          'x-mbx-uuid': '508f49d4-4f7b-4672-8b26-0fbb035859a6',
+          'x-mbx-used-weight': '144',
+          'x-mbx-used-weight-1m': '144',
+          'x-mbx-uuid': '70c61af5-2205-49e6-be64-c09c268dba36',
           'x-webkit-csp': "default-src 'self'",
           'x-xss-protection': '1; mode=block'
         },
@@ -1572,7 +1574,7 @@ AxiosError: Request failed with status code 400
           maxRedirects: 21,
           maxBodyLength: Infinity,
           protocol: 'http:',
-          path: 'https://api.binance.com/api/v3/ticker/price?symbol=DAIETH',
+          path: 'https://api.binance.com/api/v3/ticker/price?symbol=DAI_ETH',
           method: 'GET',
           headers: [Object: null prototype] {
             Accept: 'application/json, text/plain, */*',
@@ -1590,7 +1592,7 @@ AxiosError: Request failed with status code 400
           agent: undefined,
           nativeProtocols: { 'http:': [Object], 'https:': [Object] },
           pathname: 'https://api.binance.com/api/v3/ticker/price',
-          search: '?symbol=DAIETH'
+          search: '?symbol=DAI_ETH'
         },
         _ended: true,
         _ending: true,
@@ -1600,7 +1602,7 @@ AxiosError: Request failed with status code 400
         _requestBodyBuffers: [],
         _onNativeResponse: [Function (anonymous)],
         _currentRequest: [Circular *1],
-        _currentUrl: 'https://api.binance.com/api/v3/ticker/price?symbol=DAIETH',
+        _currentUrl: 'https://api.binance.com/api/v3/ticker/price?symbol=DAI_ETH',
         [Symbol(kCapture)]: false
       },
       [Symbol(kCapture)]: false,
